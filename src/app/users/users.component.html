@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-4">
+    <div class="list-group">
+      <a
+        [routerLink]="['/users', user.id, user.name]"
+        href="#"
+        class="list-group-item"
+        *ngFor="let user of users">
+        {{ user.name }}
+      </a>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4">
+    <!-- The following code has been replaced because of Nested Routes. -->
+    <!-- The following tag <app-user> displays a server when we click on a particular server as the one and only component in the page -->
+    <!-- But if you use <router-outlet> tag here the "app-user" component will be displayed besides the "app-users" component -->
+    <!-- <app-user></app-user> -->
+    <router-outlet></router-outlet>
+  </div>
+</div>

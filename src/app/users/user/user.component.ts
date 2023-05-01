@@ -25,8 +25,8 @@ export class UserComponent implements OnInit, OnDestroy {
     // The following approach will work as we are subscribing and whenever the value changes it gets reflected. 
     this.paramsSubscription = this.route.params.subscribe(
       (params: Params) => {
-        this.user.id = params['id'],
-        this.user.name = params['name']
+        this.user.id = params['id'];
+        this.user.name = params['name'];
       }
     )
   }

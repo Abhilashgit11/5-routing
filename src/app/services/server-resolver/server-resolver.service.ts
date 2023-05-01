@@ -12,7 +12,9 @@ interface Server {
 @Injectable({
   providedIn: 'root'
 })
-export class ServerResolverService implements Resolve<Server>{
+// export class ServerResolverService implements Resolve<Server>{
+  export class ServerResolverService {
+
 
   constructor(private serversService: ServersService) { }
 
